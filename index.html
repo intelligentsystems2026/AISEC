@@ -3,15 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AISEC Workshop | Security for AI Systems and AI for Systems Security</title>
-  <meta name="description" content="International Workshop on Security for AI Systems and AI for Systems Security (AISEC). Call for papers, important dates, organizing committee, and submission details." />
+  <title>AISEC 2026 | International Workshop on Security for AI Systems and AI for Systems Security</title>
+  <meta name="description" content="International Workshop on Security for AI Systems and AI for Systems Security (AISEC 2026), held with NGEN-AI 2026 in Trento, Italy. Call for papers, important dates, organizing committee, and submission details." />
 
   <style>
     :root {
       --blue-dark: #0b2d4d;
       --blue: #1f5f99;
+      --blue-mid: #2f7fbd;
       --blue-light: #d7e8f7;
       --beige: #f4ead7;
+      --beige-soft: #fff7e8;
       --beige-dark: #d8c39f;
       --text: #1f2933;
       --muted: #5c6b73;
@@ -24,6 +26,10 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -44,7 +50,7 @@
     }
 
     header {
-      background: rgba(255, 255, 255, 0.78);
+      background: rgba(255, 255, 255, 0.82);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid rgba(31, 95, 153, 0.15);
       position: sticky;
@@ -196,7 +202,7 @@
     }
 
     .hero-card {
-      background: rgba(255, 255, 255, 0.82);
+      background: rgba(255, 255, 255, 0.86);
       border: 1px solid rgba(31, 95, 153, 0.12);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
@@ -220,6 +226,16 @@
       border-radius: 16px;
       background: var(--beige);
       border-left: 5px solid var(--blue);
+      color: var(--blue-dark);
+      font-weight: 700;
+    }
+
+    .notice {
+      margin-top: 18px;
+      padding: 16px;
+      border-radius: 16px;
+      background: rgba(31, 95, 153, 0.08);
+      border: 1px solid rgba(31, 95, 153, 0.18);
       color: var(--blue-dark);
       font-weight: 700;
     }
@@ -249,20 +265,25 @@
       margin-bottom: 14px;
     }
 
+    h3 {
+      color: var(--blue-dark);
+    }
+
     .section-heading p {
       color: var(--muted);
       font-size: 1.05rem;
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.86);
+      background: rgba(255, 255, 255, 0.88);
       border: 1px solid rgba(31, 95, 153, 0.12);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       padding: 30px;
     }
 
-    .cfp-grid {
+    .cfp-grid,
+    .venue-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 24px;
@@ -277,7 +298,7 @@
 
     .topic {
       padding: 13px 15px;
-      background: #fff7e8;
+      background: var(--beige-soft);
       border: 1px solid rgba(216, 195, 159, 0.7);
       border-radius: 14px;
       color: var(--blue-dark);
@@ -317,7 +338,6 @@
     }
 
     .committee-card h3 {
-      color: var(--blue-dark);
       margin-bottom: 14px;
       font-size: 1.25rem;
     }
@@ -349,6 +369,26 @@
       font-weight: 700;
       text-align: center;
       border: 1px dashed var(--blue);
+    }
+
+    .venue-card {
+      min-height: 100%;
+    }
+
+    .venue-meta {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .venue-meta li {
+      padding: 14px 15px;
+      border-radius: 14px;
+      background: var(--beige-soft);
+      border-left: 5px solid var(--blue-mid);
+      color: var(--blue-dark);
+      font-weight: 700;
     }
 
     .submit-section {
@@ -395,6 +435,7 @@
     @media (max-width: 900px) {
       .hero-grid,
       .cfp-grid,
+      .venue-grid,
       .committee-grid {
         grid-template-columns: 1fr;
       }
@@ -441,11 +482,12 @@
     <div class="container nav">
       <a href="#top" class="logo" aria-label="AISEC Workshop home">
         <span class="logo-mark">AI</span>
-        <span>AISEC Workshop</span>
+        <span>AISEC 2026</span>
       </a>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#cfp">Call for Papers</a>
         <a href="#dates">Important Dates</a>
+        <a href="#venue">Venue</a>
         <a href="#committee">Committee</a>
         <a href="#submit">Submit</a>
       </nav>
@@ -456,10 +498,13 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow">International Workshop</span>
-          <h1>Security for AI Systems and AI for Systems Security</h1>
+          <span class="eyebrow">Co-located with NGEN-AI 2026</span>
+          <h1>International Workshop on Security for AI Systems and AI for Systems Security</h1>
           <p>
-            AISEC brings together researchers, practitioners, and industry experts working at the intersection of artificial intelligence and cybersecurity. The workshop welcomes contributions on securing AI-enabled systems as well as using AI to strengthen software, network, cloud, edge, and cyber-physical system security.
+            AISEC 2026 is organized with the 2026 International Conference on Next Generation AI Systems (NGEN-AI 2026), taking place on 1–4 September 2026 in Trento, Italy, and online over Zoom.
+          </p>
+          <p>
+            The workshop brings together researchers and practitioners working at the intersection of artificial intelligence and cybersecurity, covering both security for AI systems and AI-based methods for strengthening the security of modern software, network, cloud, edge, IoT, and cyber-physical systems.
           </p>
           <div class="hero-actions">
             <a class="btn" href="#submit">Submit Your Paper</a>
@@ -470,11 +515,15 @@
         <aside class="hero-card" aria-label="Workshop information">
           <h3>Workshop at a Glance</h3>
           <ul class="info-list">
-            <li>Acronym: AISEC</li>
-            <li>Format: To be announced</li>
-            <li>Location: To be announced</li>
-            <li>Proceedings: To be announced</li>
+            <li>Acronym: AISEC 2026</li>
+            <li>With: NGEN-AI 2026</li>
+            <li>Date: 1–4 September 2026</li>
+            <li>Venue: University of Trento, Italy</li>
+            <li>Format: In person and online over Zoom</li>
           </ul>
+          <div class="notice">
+            Accepted, registered, and presented workshop papers will be published in the NGEN-AI 2026 main conference proceedings.
+          </div>
         </aside>
       </div>
     </section>
@@ -483,9 +532,9 @@
       <div class="container">
         <div class="section-heading">
           <span>Call for Papers</span>
-          <h2>Submit original work on AI security and AI-driven system security.</h2>
+          <h2>Submit original work on AI security and AI-driven systems security.</h2>
           <p>
-            AISEC invites high-quality submissions presenting novel research results, practical experiences, tools, datasets, benchmarks, and emerging challenges related to the secure design, deployment, operation, and evaluation of AI systems and AI-enabled security solutions.
+            AISEC 2026 invites high-quality submissions presenting novel research results, practical experiences, tools, datasets, benchmarks, and emerging challenges related to the secure design, deployment, operation, and evaluation of AI systems and AI-enabled security solutions.
           </p>
         </div>
 
@@ -496,8 +545,11 @@
               The workshop focuses on two complementary directions: security for AI systems, including robustness, privacy, trustworthiness, and secure deployment; and AI for systems security, including intelligent methods for detecting, preventing, explaining, and responding to threats in modern computing environments.
             </p>
             <p style="margin-top: 16px;">
-              Submissions should clearly describe the problem, method, evaluation, and expected contribution to the AI and security communities.
+              Submissions should clearly describe the problem, method, evaluation, and contribution to the AI and security communities. Work addressing trustworthy, responsible, and sustainable AI systems is especially welcome.
             </p>
+            <div class="notice">
+              Accepted workshop papers will be included in the NGEN-AI 2026 main proceedings, subject to registration, presentation, and publisher requirements.
+            </div>
           </div>
 
           <div class="card">
@@ -505,10 +557,11 @@
             <div class="topics">
               <div class="topic">Adversarial attacks and defenses for AI systems</div>
               <div class="topic">Privacy-preserving, trustworthy, and explainable AI security</div>
+              <div class="topic">Security of LLMs, generative AI, and agentic AI systems</div>
               <div class="topic">Secure deployment of AI in cloud, edge, IoT, and cyber-physical systems</div>
               <div class="topic">AI-based intrusion, anomaly, malware, and vulnerability detection</div>
-              <div class="topic">LLM and agentic AI security, safety, and misuse prevention</div>
-              <div class="topic">Security monitoring, incident response, and threat intelligence using AI</div>
+              <div class="topic">AI for security monitoring, incident response, and threat intelligence</div>
+              <div class="topic">Federated and privacy-preserving intelligence for cybersecurity</div>
               <div class="topic">Datasets, benchmarks, tools, and evaluation methods for AI security</div>
               <div class="topic">Human, organizational, and governance aspects of secure AI systems</div>
             </div>
@@ -522,25 +575,58 @@
         <div class="section-heading">
           <span>Important Dates</span>
           <h2>Key deadlines</h2>
-          <p>Please replace the placeholder dates below with the final workshop schedule.</p>
+          <p>The workshop follows the NGEN-AI 2026 schedule. Please update these dates if a separate workshop schedule is announced.</p>
         </div>
 
         <div class="dates">
           <div class="date-card">
             <strong>Paper Submission</strong>
-            <span>DD Month YYYY</span>
+            <span>May 25th, 2026</span>
           </div>
           <div class="date-card">
             <strong>Author Notification</strong>
-            <span>DD Month YYYY</span>
+            <span>July 15th, 2026</span>
           </div>
           <div class="date-card">
             <strong>Camera-Ready Due</strong>
-            <span>DD Month YYYY</span>
+            <span>August 10th, 2026</span>
           </div>
           <div class="date-card">
-            <strong>Workshop Date</strong>
-            <span>DD Month YYYY</span>
+            <strong>Conference & Workshop</strong>
+            <span>1–4 September 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="venue">
+      <div class="container">
+        <div class="section-heading">
+          <span>Venue</span>
+          <h2>Hosted by the University of Trento</h2>
+          <p>
+            AISEC 2026 will be held with NGEN-AI 2026 at the Department of Information Engineering and Computer Science, University of Trento, in Trento, Italy.
+          </p>
+        </div>
+
+        <div class="venue-grid">
+          <div class="card venue-card">
+            <h3>Location</h3>
+            <ul class="venue-meta">
+              <li>Host institution: University of Trento</li>
+              <li>Department: Information Engineering and Computer Science</li>
+              <li>Venue: Polo Ferrari - Povo 1</li>
+              <li>City: Trento, Italy</li>
+            </ul>
+          </div>
+          <div class="card venue-card">
+            <h3>Conference Experience</h3>
+            <p>
+              The venue provides a professional academic environment for technical sessions, discussions, networking, and collaboration on next generation AI systems and AI security.
+            </p>
+            <p style="margin-top: 16px;">
+              NGEN-AI 2026 is planned as an in-person event in Trento, with online participation over Zoom.
+            </p>
           </div>
         </div>
       </div>
@@ -595,7 +681,7 @@
           <div>
             <h2>Ready to submit?</h2>
             <p>
-              Authors are invited to submit original and unpublished work through the workshop submission system. Please update the button link below with the final submission portal.
+              Authors are invited to submit original and unpublished work through the NGEN-AI 2026 submission system. Please update the button link if AISEC receives a dedicated submission track or workshop link.
             </p>
           </div>
           <a class="btn" href="https://easychair.org/" target="_blank" rel="noopener noreferrer">Submit Paper</a>
@@ -606,7 +692,7 @@
 
   <footer>
     <div class="container">
-      © 2026 International Workshop on Security for AI Systems and AI for Systems Security (AISEC). All rights reserved.
+      © 2026 International Workshop on Security for AI Systems and AI for Systems Security (AISEC 2026). Organized with NGEN-AI 2026.
     </div>
   </footer>
 </body>
