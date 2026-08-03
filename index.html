@@ -311,6 +311,23 @@
       gap: 18px;
     }
 
+    .template-card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .template-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 8px;
+    }
+
+    .template-card p {
+      color: var(--muted);
+      max-width: 760px;
+    }
+
     .date-card {
       background: var(--white);
       border-radius: 18px;
@@ -448,6 +465,11 @@
         flex-direction: column;
         align-items: flex-start;
       }
+
+      .template-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
 
     @media (max-width: 680px) {
@@ -486,6 +508,7 @@
       </a>
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#cfp">Call for Papers</a>
+        <a href="#paper-template">Template</a>
         <a href="#dates">Important Dates</a>
         <a href="#venue">Venue</a>
         <a href="#committee">Committee</a>
@@ -575,6 +598,26 @@
               <div class="topic">Human, organizational, legal, ethical, and governance aspects of secure AI systems</div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="paper-template">
+      <div class="container">
+        <div class="section-heading">
+          <span>Paper Preparation</span>
+          <h2>Mandatory conference template</h2>
+          <p>
+            All papers submitted to AISEC 2026 must be prepared using the official NGEN-AI 2026 conference template. This requirement applies to every submission.
+          </p>
+        </div>
+
+        <div class="card template-card" role="note">
+          <div>
+            <h3>Use of the conference template is mandatory.</h3>
+            <p>Before submitting, download the appropriate Word or LaTeX template and follow all formatting instructions provided on the conference submission page.</p>
+          </div>
+          <a class="btn" href="https://ngen-ai.org/submission.php" target="_blank" rel="noopener noreferrer">Open Conference Template</a>
         </div>
       </div>
     </section>
